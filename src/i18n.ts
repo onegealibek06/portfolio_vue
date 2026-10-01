@@ -342,18 +342,21 @@ const messages = {
             viewSource: "VIEW SOURCE",
             items: [
                 {
+                    id: "qazaqgaz",
                     month: "JANUARY 2026",
                     company: "QazaqGaz NTC",
                     role: "Junior Laravel Developer (Test Task)",
                     achievements: ["Helpdesk system on Laravel 12 with RBAC model.", "Admin panel for tickets, categories and priorities.", "Full environment and DB setup using Seeders."]
                 },
                 {
+                    id: "avtoshkola",
                     month: "JUNE 2025",
                     company: "Avtoshkola NS",
                     role: "Commercial Bot Developer",
                     achievements: ["Driving lessons booking via Google Sheets API.", "Payment monitoring and auto-notifications.", "Architecture based on python-telegram-bot + FastAPI."]
                 },
                 {
+                    id: "skt-orken",
                     month: "JUNE 2025",
                     company: "SKT ORKEN BUILD",
                     role: "Web Developer Intern",
@@ -691,18 +694,21 @@ const messages = {
             viewSource: "ИСХОДНЫЙ КОД",
             items: [
                 {
+                    id: "qazaqgaz",
                     month: "ЯНВАРЬ 2026",
                     company: "QazaqGaz НТЦ",
                     role: "Junior Laravel Developer",
                     achievements: ["Helpdesk система на Laravel 12", "RBAC модель", "Seeders"]
                 },
                 {
+                    id: "avtoshkola",
                     month: "ИЮНЬ 2025",
                     company: "Avtoshkola NS",
                     role: "Разработчик ботов",
                     achievements: ["Google Sheets API", "Мониторинг оплат"]
                 },
                 {
+                    id: "skt-orken",
                     month: "ИЮНЬ 2025",
                     company: "СКТ ӨРКЕН БЬЮЛД",
                     role: "Web-интерн",
@@ -1038,18 +1044,21 @@ const messages = {
             viewSource: "БАСТАПҚЫ КОД",
             items: [
                 {
+                    id: "qazaqgaz",
                     month: "ҚАҢТАР 2026",
                     company: "QazaqGaz ГТӨ",
                     role: "Junior Laravel Developer",
                     achievements: ["Helpdesk жүйесі", "RBAC моделі"]
                 },
                 {
+                    id: "avtoshkola",
                     month: "МАУСЫМ 2025",
                     company: "Avtoshkola NS",
                     role: "Бот әзірлеуші",
                     achievements: ["Google Sheets API автоматтандыру"]
                 },
                 {
+                    id: "skt-orken",
                     month: "МАУСЫМ 2025",
                     company: "СКТ ӨРКЕН БЬЮЛД",
                     role: "Web-әзірлеуші стажер",

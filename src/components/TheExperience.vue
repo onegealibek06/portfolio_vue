@@ -9,17 +9,21 @@ const localizedExperience = computed(() => {
 });
 
 
-const jobLinks = [
-  "https://github.com/onegealibek06/qazaqgaz-test",
-  "https://github.com/onegealibek06/autoshkola-bot",
-  "https://github.com/onegealibek06/skt-orken-site"
-];
-
-const jobStacks = [
-  ["Laravel 12", "Breeze", "MySQL", "Tailwind"],
-  ["Python", "FastAPI", "Gspread", "APScheduler"],
-  ["Flask", "Python 3.12", "Jinja2", "Virtualenv"]
-];
+// Стек и ссылка не зависят от языка — храним их по id записи из experience.items
+const jobMeta: Record<string, { stack: string[]; link?: string }> = {
+  qazaqgaz: {
+    stack: ["Laravel 12", "Breeze", "MySQL", "Tailwind"],
+    link: "https://github.com/onegealibek06/qazaqgaz-test"
+  },
+  avtoshkola: {
+    stack: ["Python", "FastAPI", "Gspread", "APScheduler"],
+    link: "https://github.com/onegealibek06/autoshkola-bot"
+  },
+  "skt-orken": {
+    stack: ["Flask", "Python 3.12", "Jinja2", "Virtualenv"],
+    link: "https://github.com/onegealibek06/skt-orken-site"
+  }
+};
 </script>
 
 <template>
@@ -32,7 +36,7 @@ const jobStacks = [
       </div>
 
       <div class="experience-grid">
-        <div v-for="(job, index) in localizedExperience" :key="index" class="exp-card">
+        <div v-for="(job, index) in localizedExperience" :key="job.id" class="exp-card">
           <div class="card-inner">
 
             <div class="card-header">
@@ -59,11 +63,11 @@ const jobStacks = [
 
             <div class="card-footer">
               <div class="tech-row">
-                <span v-for="tech in jobStacks[index]" :key="tech" class="tech-tag">
+                <span v-for="tech in jobMeta[job.id]?.stack" :key="tech" class="tech-tag">
                   {{ tech }}
                 </span>
               </div>
-              <a :href="jobLinks[index]" target="_blank" class="github-link">
+              <a v-if="jobMeta[job.id]?.link" :href="jobMeta[job.id].link" target="_blank" class="github-link">
                 {{ locale.t('experience.viewSource') }} ↗
               </a>
             </div>
