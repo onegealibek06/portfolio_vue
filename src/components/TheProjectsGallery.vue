@@ -1105,6 +1105,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
 .modal-window.dashboard {
   width: 100%; max-width: 950px; background: #050505; border: 1px solid #1a1a1a;
   padding: 50px; position: relative;
+  max-height: 95vh; overflow-y: auto;
 }
 
 .m-container { display: flex; flex-direction: column; gap: 30px; }
