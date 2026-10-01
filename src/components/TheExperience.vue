@@ -10,9 +10,9 @@ const localizedExperience = computed(() => {
 
 
 const jobLinks = [
-  "https://github.com/kukakamakaka/qazaqgaz-test",
-  "https://github.com/kukakamakaka/autoshkola-bot",
-  "https://github.com/kukakamakaka/skt-orken-site"
+  "https://github.com/onegealibek06/qazaqgaz-test",
+  "https://github.com/onegealibek06/autoshkola-bot",
+  "https://github.com/onegealibek06/skt-orken-site"
 ];
 
 const jobStacks = [

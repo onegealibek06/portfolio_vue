@@ -28,7 +28,7 @@
         <div class="bento-cell socials">
           <span class="cell-label">{{ locale.t('footer.socials') }}</span>
           <div class="pill-group">
-            <a href="https://github.com/kukakamakaka" target="_blank" class="social-pill">GH</a>
+            <a href="https://github.com/onegealibek06" target="_blank" class="social-pill">GH</a>
             <a href="https://t.me/evfendy" target="_blank" class="social-pill">TG</a>
             <a href="https://linkedin.com" target="_blank" class="social-pill">LI</a>
           </div>

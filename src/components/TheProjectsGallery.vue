@@ -51,13 +51,14 @@ const onLeave = (el: Element, done: () => void) => {
 };
 
 const scrollSlider = (direction: 'next' | 'prev') => {
-  if (projectSlider.value) {
-    const scrollAmount = projectSlider.value.clientWidth;
-    projectSlider.value.scrollBy({
-      left: direction === 'next' ? scrollAmount : -scrollAmount,
-      behavior: 'smooth'
-    });
-  }
+  const track = projectSlider.value;
+  if (!track) return;
+  const width = track.clientWidth;
+  const count = track.children.length;
+  // scrollBy + scroll-snap иногда игнорирует клик, поэтому идём к конкретному слайду
+  const current = Math.round(track.scrollLeft / width);
+  const target = (current + (direction === 'next' ? 1 : -1) + count) % count;
+  track.scrollTo({ left: target * width, behavior: 'smooth' });
 };
 </script>
 
@@ -150,14 +151,17 @@ const scrollSlider = (direction: 'next' | 'prev') => {
       </div>
 
       <div class="p-card active" @click="openProject(4)">
-        <div class="project-badge in-progress">
+        <div class="project-badge commercial">
           {{ locale.t('projects.items.4.badge_status') }}
+        </div>
+        <div class="card-bg-overlay">
+          <img src="../assets/projects/sentinel/main.jpg" class="card-img-preview" alt="SentinelCore Dashboard">
         </div>
 
         <div class="card-content">
           <div class="card-top">
             <div class="status-indicator">
-              <span class="pulse orange"></span>
+              <span class="pulse green"></span>
               {{ locale.t('projects.items.4.status') }}
             </div>
             <span class="index">04</span>
@@ -383,7 +387,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
                 <a href="https://t.me/ns_drive_bot" target="_blank" class="btn-p">
                   {{ locale.t('projects.open_bot') }}
                 </a>
-                <a href="https://github.com/kukakamakaka/autoshkola-bot" target="_blank" class="btn-s">
+                <a href="https://github.com/onegealibek06/autoshkola-bot" target="_blank" class="btn-s">
                   {{ locale.t('projects.source') }}
                 </a>
               </div>
@@ -449,7 +453,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/qazaqgaz-test" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/qazaqgaz-test" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.2.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -518,7 +522,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/IronnDynasty" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/IronnDynasty" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.3.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -540,6 +544,18 @@ const scrollSlider = (direction: 'next' | 'prev') => {
                 <p class="m-tagline">{{ locale.t('projects.items.4.tagline') }}</p>
               </div>
 
+              <div class="m-block slider-wrapper">
+                <div class="gallery-viewport">
+                  <button class="nav-slide prev" @click="scrollSlider('prev')">‹</button>
+                  <button class="nav-slide next" @click="scrollSlider('next')">›</button>
+                  <div class="gallery-track" ref="projectSlider">
+                    <div class="gallery-slide"><img src="../assets/projects/sentinel/main.jpg" alt="SOC Dashboard"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/sentinel/analytics.jpg" alt="ML Analytics"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/sentinel/landing.jpg" alt="Landing"></div>
+                  </div>
+                </div>
+              </div>
+
               <div class="m-main-grid">
                 <div class="m-block">
                   <label>{{ locale.t('projects.items.4.tech_label') }}</label>
@@ -555,11 +571,13 @@ const scrollSlider = (direction: 'next' | 'prev') => {
                 <div class="m-block">
                   <label>{{ locale.t('projects.items.4.pipeline_label') }}</label>
                   <div class="logic-flow">
-                    <div class="node">TELEMETRY</div>
+                    <div class="node">AGENT</div>
                     <div class="arrow">→</div>
-                    <div class="node">INGEST</div>
+                    <div class="node">SCORE</div>
                     <div class="arrow">→</div>
-                    <div class="node">ANALYSIS</div>
+                    <div class="node">MITRE</div>
+                    <div class="arrow">→</div>
+                    <div class="node">ALERT</div>
                   </div>
                 </div>
 
@@ -582,7 +600,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/soc-anomaly-app" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/soc-anomaly-app" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.4.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -654,7 +672,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/ai-health" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/ai-health" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.5.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -720,7 +738,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/viva-cine" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/viva-cine" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.6.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -787,7 +805,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/cargallery" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/cargallery" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.7.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -855,7 +873,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/restaurant" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/restaurant" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.8.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -923,7 +941,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/kukakamakaka/skt-orken-site" target="_blank" class="btn-s full-width">
+                <a href="https://github.com/onegealibek06/skt-orken-site" target="_blank" class="btn-s full-width">
                   {{ locale.t('projects.items.9.action_btn') }} <span>→</span>
                 </a>
               </div>
@@ -992,7 +1010,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
 
               <div class="m-actions">
                 <div class="action-grid">
-                  <a href="https://github.com/kukakamakaka/quark-project" target="_blank" class="btn-s">
+                  <a href="https://github.com/onegealibek06/quark-project" target="_blank" class="btn-s">
                     GITHUB REPO <span>→</span>
                   </a>
                   <a href="https://quark-project-nb5f.vercel.app/" target="_blank" class="btn-s primary">

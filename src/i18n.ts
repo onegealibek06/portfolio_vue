@@ -177,24 +177,26 @@ const messages = {
                     action_btn: "PROJECT_STRUCTURE // VIEW_ON_GITHUB"
                 },
                 "4": {
-                    title: "SOC DETECTOR",
-                    category: "CYBER_SECURITY",
-                    status: "PROJECT IN RROGRESS",
-                    badge_status: "IN_PROGRESS",
-                    tagline: "Microservice for real-time security log analysis",
-                    badge: "CYBERSECURITY // MVP_UNDER_DEV",
+                    title: "SENTINELCORE",
+                    category: "CYBER_SECURITY // DIPLOMA",
+                    status: "DIPLOMA PROJECT",
+                    badge_status: "DIPLOMA · 100/100",
+                    tagline: "ML-powered anomaly detection in endpoint telemetry for SOC incident response automation",
+                    badge: "THESIS // DEFENDED 100/100",
                     tech_label: "CORE_TECHNOLOGIES",
-                    tech: ["FastAPI", "Asynchronous Python", "SQLAlchemy + SQLite (soc.db)", "Pydantic v2", "OpenAPI (Swagger)"],                    pipeline_label: "DATA_PIPELINE",
-                    features_label: "CURRENT_PROGRESS_MVP",
+                    tech: ["FastAPI", "Next.js 15 + TypeScript", "scikit-learn (Isolation Forest)", "MITRE ATT&CK", "Gemini 2.0 Flash", "Telegram Bot API", "psutil agent", "SQLite / PostgreSQL"],
+                    pipeline_label: "DETECTION_PIPELINE",
+                    features_label: "THREE_LAYERS_OF_DEFENSE",
                     features: [
-                        "Ingestion API: /ingest endpoint for log reception",
-                        "Data Consistency: Strict validation of incoming JSON",
-                        "Storage: Automated saving to soc.db"
+                        "Unsupervised ML: Isolation Forest (200 trees, 21 features) learns normal behavior — no attack signatures needed.",
+                        "Rule-based boost: 37 weighted rules for real attacker techniques — reverse shell, mimikatz, base64 obfuscation, C2.",
+                        "MITRE ATT&CK: 35 techniques across 9 tactics — every alert names the technique (T1059, T1003, T1071).",
+                        "Evaluation: 20/20 attacks detected, 0 false positives (Precision / Recall / F1 = 1.0)."
                     ],
-                    impact_label: "DETECTION_ENGINE",
-                    impact_stat: "ASYNC",
-                    impact_desc: "Integrated <b>anomaly_detector.py</b> module for stream deviation search.",
-                    action_btn: "SYSTEM_ARCHITECTURE_SOURCE"
+                    impact_label: "TIME_TO_ALERT",
+                    impact_stat: "<20ms",
+                    impact_desc: "Attack → hybrid score <b>max(ML, rules × 0.7) + MITRE</b> → Telegram alert → AI incident report from Gemini.",
+                    action_btn: "SOURCE_CODE"
                 },
                 "5": {
                     title: "AI DETECTOR",
@@ -524,24 +526,26 @@ const messages = {
                     action_btn: "СТРУКТУРА ПРОЕКТА // НА GITHUB"
                 },
                 "4": {
-                    title: "SOC DETECTOR",
-                    category: "КИБЕРБЕЗОПАСНОСТЬ",
-                    status: "ПРОЕКТ",
-                    badge_status: "В РАЗРАБОТКЕ",
-                    tagline: "Микросервис для анализа логов безопасности в реальном времени",
-                    badge: "CYBERSECURITY // MVP_UNDER_DEV",
+                    title: "SENTINELCORE",
+                    category: "КИБЕРБЕЗОПАСНОСТЬ // ДИПЛОМ",
+                    status: "ДИПЛОМНЫЙ ПРОЕКТ",
+                    badge_status: "ДИПЛОМ · 100/100",
+                    tagline: "Обнаружение аномалий в телеметрии конечных устройств с помощью ML для автоматизации реагирования SOC",
+                    badge: "ДИПЛОМ // ЗАЩИЩЁН НА 100/100",
                     tech_label: "ОСНОВНЫЕ ТЕХНОЛОГИИ",
-                    tech: ["FastAPI", "Asynchronous Python", "SQLAlchemy + SQLite (soc.db)", "Pydantic v2", "OpenAPI (Swagger)"],                    pipeline_label: "КОНВЕЙЕР ДАННЫХ",
-                    features_label: "ТЕКУЩИЙ ПРОГРЕСС MVP",
+                    tech: ["FastAPI", "Next.js 15 + TypeScript", "scikit-learn (Isolation Forest)", "MITRE ATT&CK", "Gemini 2.0 Flash", "Telegram Bot API", "psutil agent", "SQLite / PostgreSQL"],
+                    pipeline_label: "КОНВЕЙЕР ОБНАРУЖЕНИЯ",
+                    features_label: "ТРИ СЛОЯ ЗАЩИТЫ",
                     features: [
-                        "Ingestion API: Эндпоинт /ingest для приема логов",
-                        "Data Consistency: Строгая валидация входящих JSON",
-                        "Storage: Автоматизация сохранения в soc.db"
+                        "ML без учителя: Isolation Forest (200 деревьев, 21 признак) строит профиль нормы — сигнатуры атак не нужны.",
+                        "Rule-based boost: 37 взвешенных правил по реальным техникам — reverse shell, mimikatz, base64-обфускация, C2.",
+                        "MITRE ATT&CK: 35 техник в 9 тактиках — каждый алерт называет технику (T1059, T1003, T1071).",
+                        "Результат тестов: 20/20 атак обнаружено, 0 ложных срабатываний (Precision / Recall / F1 = 1.0)."
                     ],
-                    impact_label: "ДВИЖОК ОБНАРУЖЕНИЯ",
-                    impact_stat: "ASYNC",
-                    impact_desc: "Интегрированный модуль <b>anomaly_detector.py</b> для поиска отклонений в потоке.",
-                    action_btn: "ИСХОДНЫЙ КОД АРХИТЕКТУРЫ"
+                    impact_label: "ВРЕМЯ ДО АЛЕРТА",
+                    impact_stat: "<20ms",
+                    impact_desc: "Атака → гибридный скор <b>max(ML, правила × 0.7) + MITRE</b> → уведомление в Telegram → AI-отчёт от Gemini.",
+                    action_btn: "ИСХОДНЫЙ КОД"
                 },
                 "5": {
                     title: "AI DETECTOR",
@@ -869,25 +873,26 @@ const messages = {
                     action_btn: "ЖОБА ҚҰРЫЛЫМЫ // GITHUB-ТА ҚАРАУ"
                 },
                 "4": {
-                    title: "SOC DETECTOR",
-                    category: "КИБЕРҚАУІПСІЗДІК",
-                    status: "ПРОЕКТ",
-                    badge_status: "ӘЗІРЛЕУ ҮСТІНДЕ",
-                    tagline: "Қауіпсіздік логтарын нақты уақытта талдауға арналған микросервис",
-                    badge: "CYBERSECURITY // MVP_UNDER_DEV",
+                    title: "SENTINELCORE",
+                    category: "КИБЕРҚАУІПСІЗДІК // ДИПЛОМ",
+                    status: "ДИПЛОМДЫҚ ЖОБА",
+                    badge_status: "ДИПЛОМ · 100/100",
+                    tagline: "SOC инциденттеріне жауап беруді автоматтандыру үшін соңғы құрылғылар телеметриясындағы аномалияларды ML арқылы анықтау",
+                    badge: "ДИПЛОМ // 100/100 ҚОРҒАЛДЫ",
                     tech_label: "НЕГІЗГІ ТЕХНОЛОГИЯЛАР",
-                    tech: ["FastAPI", "Asynchronous Python", "SQLAlchemy + SQLite (soc.db)", "Pydantic v2", "OpenAPI (Swagger)"],
-                    pipeline_label: "ДЕРЕКТЕР КОНВЕЙЕРІ",
-                    features_label: "MVP-ТЫҢ АҒЫМДАҒЫ ПРОГРЕСІ",
+                    tech: ["FastAPI", "Next.js 15 + TypeScript", "scikit-learn (Isolation Forest)", "MITRE ATT&CK", "Gemini 2.0 Flash", "Telegram Bot API", "psutil agent", "SQLite / PostgreSQL"],
+                    pipeline_label: "АНЫҚТАУ КОНВЕЙЕРІ",
+                    features_label: "ҚОРҒАНЫСТЫҢ ҮШ ҚАБАТЫ",
                     features: [
-                        "Ingestion API: Логтарды қабылдауға арналған /ingest эндпоинті",
-                        "Data Consistency: Кіріс JSON деректерін қатаң валидациялау",
-                        "Storage: soc.db базасына автоматты түрде сақтау"
+                        "Мұғалімсіз ML: Isolation Forest (200 ағаш, 21 белгі) қалыпты мінез-құлық профилін құрады — шабуыл сигнатуралары қажет емес.",
+                        "Rule-based boost: нақты шабуыл техникалары бойынша 37 салмақталған ереже — reverse shell, mimikatz, base64 обфускация, C2.",
+                        "MITRE ATT&CK: 9 тактикадағы 35 техника — әр алерт техниканы атайды (T1059, T1003, T1071).",
+                        "Тест нәтижесі: 20/20 шабуыл анықталды, 0 жалған іске қосылу (Precision / Recall / F1 = 1.0)."
                     ],
-                    impact_label: "АНЫҚТАУ МОТОРЫ",
-                    impact_stat: "ASYNC",
-                    impact_desc: "Ағындағы ауытқуларды іздеуге арналған интеграцияланған <b>anomaly_detector.py</b> модулі.",
-                    action_btn: "ЖҮЙЕ АРХИТЕКТУРАСЫНЫҢ КОДЫ"
+                    impact_label: "АЛЕРТКЕ ДЕЙІНГІ УАҚЫТ",
+                    impact_stat: "<20ms",
+                    impact_desc: "Шабуыл → гибридті скор <b>max(ML, ережелер × 0.7) + MITRE</b> → Telegram хабарлама → Gemini-ден AI есебі.",
+                    action_btn: "БАСТАПҚЫ КОД"
                 },
                 "5": {
                     title: "AI DETECTOR",

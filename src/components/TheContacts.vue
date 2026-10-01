@@ -48,7 +48,7 @@
             <a href="https://wa.me/77054371168" target="_blank" class="bento-item social-link wa">
               <i class="fab fa-whatsapp"></i> <span>WHATSAPP</span>
             </a>
-            <a href="https://github.com/kukakamakaka" target="_blank" class="bento-item social-link gh">
+            <a href="https://github.com/onegealibek06" target="_blank" class="bento-item social-link gh">
               <i class="fab fa-github"></i> <span>GITHUB</span>
             </a>
             <a href="https://linkedin.com/in/kukaka-makaka-2b8a8a388/" target="_blank" class="bento-item social-link li">
