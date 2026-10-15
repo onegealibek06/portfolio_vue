@@ -11,6 +11,10 @@ const localizedExperience = computed(() => {
 
 // Стек и ссылка не зависят от языка — храним их по id записи из experience.items
 const jobMeta: Record<string, { stack: string[]; link?: string }> = {
+  // Коммерческий проект, репозиторий приватный — без ссылки
+  "aqparattyq-sana": {
+    stack: ["Vue 3", "TypeScript", "Vuetify 3", "Pinia", "Vue Router", "vue-i18n", "Axios", "MediaPipe", "Chart.js", "TipTap", "Playwright", "GitLab CI"]
+  },
   qazaqgaz: {
     stack: ["Laravel 12", "Breeze", "MySQL", "Tailwind"],
     link: "https://github.com/onegealibek06/qazaqgaz-test"

@@ -342,6 +342,18 @@ const messages = {
             viewSource: "VIEW SOURCE",
             items: [
                 {
+                    id: "aqparattyq-sana",
+                    month: "JUNE 2026 — PRESENT",
+                    company: "Aqparattyq Sana",
+                    role: "Frontend Developer · LMS & Security Awareness Platform",
+                    achievements: [
+                        "Built an online exam proctoring module end-to-end: in-browser face detection with MediaPipe (absent / multiple faces, head turn, gaze), violation event buffer with heartbeat and snapshots, manager review cabinet.",
+                        "Delivered the UZ edition for a new market: i18n for RU / EN / UZ / KZ, ~120 hardcoded strings moved to vue-i18n, rebrand via design tokens, certificate templates.",
+                        "Custom email mailing module, Active Directory OU selection, server-side pagination for groups.",
+                        "~200 commits in a team of 4 developers; Playwright e2e tests and GitLab CI."
+                    ]
+                },
+                {
                     id: "qazaqgaz",
                     month: "JANUARY 2026",
                     company: "QazaqGaz NTC",
@@ -694,6 +706,18 @@ const messages = {
             viewSource: "ИСХОДНЫЙ КОД",
             items: [
                 {
+                    id: "aqparattyq-sana",
+                    month: "ИЮНЬ 2026 — СЕЙЧАС",
+                    company: "Aqparattyq Sana",
+                    role: "Frontend-разработчик · LMS и платформа security awareness",
+                    achievements: [
+                        "С нуля реализовала модуль прокторинга онлайн-экзаменов: распознавание лица в браузере через MediaPipe (нет лица / несколько лиц, поворот головы, взгляд), буфер нарушений с heartbeat и снимками, кабинет проверки для менеджера.",
+                        "Выпустила UZ-версию для нового рынка: i18n на RU / EN / UZ / KZ, ~120 захардкоженных строк вынесены в vue-i18n, ребрендинг через дизайн-токены, шаблоны сертификатов.",
+                        "Модуль кастомных email-рассылок, выбор OU из Active Directory, серверная пагинация групп.",
+                        "~200 коммитов в команде из 4 разработчиков; e2e-тесты на Playwright и GitLab CI."
+                    ]
+                },
+                {
                     id: "qazaqgaz",
                     month: "ЯНВАРЬ 2026",
                     company: "QazaqGaz НТЦ",
@@ -1043,6 +1067,18 @@ const messages = {
             journey: "2025 — 2026 Мансап жолы",
             viewSource: "БАСТАПҚЫ КОД",
             items: [
+                {
+                    id: "aqparattyq-sana",
+                    month: "МАУСЫМ 2026 — ҚАЗІР",
+                    company: "Aqparattyq Sana",
+                    role: "Frontend-әзірлеуші · LMS және security awareness платформасы",
+                    achievements: [
+                        "Онлайн-емтихан прокторинг модулін нөлден жасадым: MediaPipe арқылы браузерде бетті анықтау (бет жоқ / бірнеше бет, бас бұру, көз қарасы), heartbeat пен суреттері бар бұзушылықтар буфері, менеджерге арналған тексеру кабинеті.",
+                        "Жаңа нарыққа UZ-нұсқасын шығардым: RU / EN / UZ / KZ i18n, ~120 қатаң жазылған жол vue-i18n-ге көшірілді, дизайн-токендер арқылы ребрендинг, сертификат үлгілері.",
+                        "Арнайы email-тарату модулі, Active Directory-ден OU таңдау, топтардың серверлік пагинациясы.",
+                        "4 әзірлеушіден тұратын командада ~200 коммит; Playwright e2e-тесттері және GitLab CI."
+                    ]
+                },
                 {
                     id: "qazaqgaz",
                     month: "ҚАҢТАР 2026",
