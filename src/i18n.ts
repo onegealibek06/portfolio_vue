@@ -282,23 +282,24 @@ const messages = {
                     "action_btn": "VIEW PROJECT"
                 },
                 "9": {
-                    "title": "SKT-ORKEN",
-                    "category": "BUSINESS // INDUSTRY",
-                    "status": "PROJECT",
-                    "tagline": "Professional corporate website based on Flask for the industrial sector",
-                    "badge": "CORPORATE_IDENTITY // BUSINESS_WEB",
-                    "biz_label": "BUSINESS_SOLUTION",
-                    "description": "Development of the official representation for SKT-Orken. The main focus is on clean code and a strict corporate style.",
+                    "title": "SKT Orken Build",
+                    "category": "Construction // Corporate website",
+                    "status": "LIVE",
+                    "badge": "REDESIGN 2026 // LIVE",
+                    "tagline": "Full redesign of my first commercial site — now live for a construction company in Astana.",
+                    "biz_label": "BEFORE → AFTER",
+                    "description": "My first site (2025) was rebuilt from scratch in 2026. The old page showed a tax-risk note and a tax chart, had no phone and a contact form that sent nothing. The new site uses only verified public data (procurement registry): services, process, company requisites, contacts and an office map.",
                     "features": [
-                        "Custom Routing: Configured routing via Flask.",
-                        "Asset Management: Optimization of static resources (CSS/JS).",
-                        "Production Ready: Deployment environment and configuration setup."
+                        "Preloader, slow background motion with parallax and dust, line-by-line hero, count-up stats",
+                        "Full-screen mobile menu, sticky call bar, RU / KZ switch, mobile-first layout from 375px",
+                        "Lead form with validation and phone mask, requisites with BIN copy, map with branded pin and routes",
+                        "No Bootstrap: custom CSS/JS, SVG logo, SEO + Open Graph + schema.org, static export to Cloudflare Pages"
                     ],
-                    "tech_label": "CORP_STACK",
-                    "tech": ["Python 3.12", "Flask", "HTML5/CSS3", "JavaScript", "Virtualenv"],
-                    "focus_label": "PROJECT_FOCUS",
-                    "focus_stat": "UX",
-                    "focus_desc": "Emphasis on informativeness and easy navigation for the <b>B2B segment</b>.",
+                    "tech_label": "TECH STACK",
+                    "tech": ["Python 3.12", "Flask", "HTML5 / CSS3", "Vanilla JS", "Leaflet + OpenStreetMap", "RU / KZ i18n", "schema.org SEO", "Cloudflare Pages"],
+                    "focus_label": "OUTCOME",
+                    "focus_stat": "~370 KB",
+                    "focus_desc": "The whole site weighs about <b>370 KB</b> and is live on <b>skt-orken-build.pages.dev</b>.",
                     "action_btn": "VIEW PROJECT"
                 },
                 "10": {
@@ -396,7 +397,7 @@ const messages = {
                     company: "SKT ORKEN BUILD",
                     role: "Web Developer Intern",
                     achievements: ["Corporate site on Flask with Jinja2 templates.", "Server optimization for macOS specific ports.", "Responsive layout and asset structure design."],
-                    comment: "My first site, don't judge too hard haha"
+                    comment: "My first site — fully redesigned in 2026 and now live"
                 }
             ]
         },
@@ -669,24 +670,25 @@ const messages = {
                     "action_btn": "ПОКАЗАТЬ ПРОЕКТ"
                 },
                 "9": {
-                    "title": "SKT-ORKEN",
-                    "category": "БИЗНЕС // ПРОМЫШЛЕННОСТЬ",
-                    "status": "ПРОЕКТ",
-                    "tagline": "Профессиональный корпоративный сайт на базе Flask для промышленного сектора",
-                    "badge": "CORPORATE_IDENTITY // BUSINESS_WEB",
-                    "biz_label": "БИЗНЕС-РЕШЕНИЕ",
-                    "description": "Разработка официального представительства компании SKT-Orken. Основной упор сделан на чистоту кода и строгий корпоративный стиль.",
+                    "title": "СКТ Өркен Бьюлд",
+                    "category": "Стройка // Корпоративный сайт",
+                    "status": "ОПУБЛИКОВАН",
+                    "badge": "РЕДИЗАЙН 2026 // LIVE",
+                    "tagline": "Полный редизайн моего первого коммерческого сайта — теперь он работает для строительной компании в Астане.",
+                    "biz_label": "БЫЛО → СТАЛО",
+                    "description": "Мой первый сайт (2025) в 2026 году пересобран с нуля. На старой странице были фраза о налоговом риске и график налогов, не было телефона, а форма ничего не отправляла. Новый сайт построен только на проверенных открытых данных (реестр госзакупок): услуги, этапы работы, реквизиты, контакты и карта офиса.",
                     "features": [
-                        "Custom Routing: Настройка маршрутизации через Flask.",
-                        "Asset Management: Оптимизация статических ресурсов (CSS/JS).",
-                        "Production Ready: Настройка конфигурации и окружения для деплоя."
+                        "Прелоадер, медленное движение фона с параллаксом и пылью, заголовок по строкам, счётчики",
+                        "Мобильное меню на весь экран, нижняя панель звонка, RU / KZ, вёрстка mobile-first от 375px",
+                        "Форма с проверкой и маской телефона, реквизиты с копированием БИН, карта с фирменным пином и маршрутами",
+                        "Без Bootstrap: свой CSS/JS, SVG-логотип, SEO + Open Graph + schema.org, статическая сборка на Cloudflare Pages"
                     ],
-                    "tech_label": "КОРП_СТЕК",
-                    "tech": ["Python 3.12", "Flask", "HTML5/CSS3", "JavaScript", "Virtualenv"],
-                    "focus_label": "ФОКУС ПРОЕКТА",
-                    "focus_stat": "UX",
-                    "focus_desc": "Акцент на информативность и удобную навигацию для <b>B2B сегмента</b>.",
-                    "action_btn": "ПОКАЗАТЬ ПРОЕКТ"
+                    "tech_label": "СТЕК ТЕХНОЛОГИЙ",
+                    "tech": ["Python 3.12", "Flask", "HTML5 / CSS3", "Vanilla JS", "Leaflet + OpenStreetMap", "RU / KZ i18n", "schema.org SEO", "Cloudflare Pages"],
+                    "focus_label": "РЕЗУЛЬТАТ",
+                    "focus_stat": "~370 КБ",
+                    "focus_desc": "Весь сайт весит около <b>370 КБ</b> и опубликован на <b>skt-orken-build.pages.dev</b>.",
+                    "action_btn": "СМОТРЕТЬ ПРОЕКТ"
                 },
                 "10": {
                     "status": "ПРОЕКТ",
@@ -783,7 +785,7 @@ const messages = {
                     company: "СКТ ӨРКЕН БЬЮЛД",
                     role: "Web-интерн",
                     achievements: ["Сайт на Flask", "Верстка"],
-                    comment: "Мой первый сайт, строго не судить ахаха"
+                    comment: "Мой первый сайт — в 2026 полностью переделан и опубликован"
                 }
             ]
         },
@@ -1054,24 +1056,25 @@ const messages = {
                     "action_btn": "ЖОБАҒА ҚАРАУ"
                 },
                 "9": {
-                    "title": "SKT-ORKEN",
-                    "category": "БИЗНЕС // ӨНДІРІС",
-                    "status": "ПРОЕКТ",
-                    "tagline": "Өнеркәсіптік секторға арналған Flask негізіндегі кәсіби корпоративтік сайт",
-                    "badge": "CORPORATE_IDENTITY // BUSINESS_WEB",
-                    "biz_label": "БИЗНЕС-ШЕШІМ",
-                    "description": "SKT-Orken компаниясының ресми өкілдігін әзірлеу. Негізгі назар кодтың тазалығына және қатаң корпоративтік стильге аударылған.",
+                    "title": "СКТ Өркен Бьюлд",
+                    "category": "Құрылыс // Корпоративтік сайт",
+                    "status": "ЖАРИЯЛАНДЫ",
+                    "badge": "РЕДИЗАЙН 2026 // LIVE",
+                    "tagline": "Алғашқы коммерциялық сайтымның толық редизайны — енді Астанадағы құрылыс компаниясы үшін жұмыс істейді.",
+                    "biz_label": "БҰРЫН → ҚАЗІР",
+                    "description": "Алғашқы сайтым (2025) 2026 жылы нөлден қайта жасалды. Ескі бетте салықтық тәуекел туралы жазу мен салық графигі болды, телефон жоқ еді, ал форма ештеңе жібермейтін. Жаңа сайт тек тексерілген ашық деректерге (мемлекеттік сатып алу тізілімі) негізделген: қызметтер, жұмыс кезеңдері, деректемелер, байланыс және кеңсе картасы.",
                     "features": [
-                        "Custom Routing: Flask арқылы маршрутизацияны баптау.",
-                        "Asset Management: Статикалық ресурстарды (CSS/JS) оңтайландыру.",
-                        "Production Ready: Деплойға арналған конфигурация мен ортаны баптау."
+                        "Прелоадер, параллакс пен шаңы бар фонның баяу қозғалысы, жол-жолымен шығатын тақырып, санауыштар",
+                        "Толық экранды мобильді мәзір, қоңырау панелі, RU / KZ, 375px-тен бастап mobile-first",
+                        "Тексеру мен телефон маскасы бар форма, БСН көшіретін деректемелер, фирмалық пині мен бағыттары бар карта",
+                        "Bootstrap-сыз: өз CSS/JS, SVG-логотип, SEO + Open Graph + schema.org, Cloudflare Pages-ке статикалық жинақ"
                     ],
-                    "tech_label": "КОРП_СТЕК",
-                    "tech": ["Python 3.12", "Flask", "HTML5/CSS3", "JavaScript", "Virtualenv"],
-                    "focus_label": "ЖОБА ФОКУСЫ",
-                    "focus_stat": "UX",
-                    "focus_desc": "<b>B2B сегменті</b> үшін ақпараттылық пен ыңғайлы навигацияға басымдық беру.",
-                    "action_btn": "ЖОБАҒА ҚАРАУ"
+                    "tech_label": "ТЕХНОЛОГИЯЛАР",
+                    "tech": ["Python 3.12", "Flask", "HTML5 / CSS3", "Vanilla JS", "Leaflet + OpenStreetMap", "RU / KZ i18n", "schema.org SEO", "Cloudflare Pages"],
+                    "focus_label": "НӘТИЖЕ",
+                    "focus_stat": "~370 КБ",
+                    "focus_desc": "Бүкіл сайт шамамен <b>370 КБ</b> және <b>skt-orken-build.pages.dev</b> сайтында жарияланған.",
+                    "action_btn": "ЖОБАНЫ ҚАРАУ"
                 },
                 "10": {
                     "status": "ПРОЕКТ",
@@ -1168,7 +1171,7 @@ const messages = {
                     company: "СКТ ӨРКЕН БЬЮЛД",
                     role: "Web-әзірлеуші стажер",
                     achievements: ["Flask негізіндегі сайт"],
-                    comment: "Менің алғашқы сайтым, қатты сынамаңыздар ахаха"
+                    comment: "Менің алғашқы сайтым — 2026 жылы толық қайта жасалып, жарияланды"
                 }
             ]
         },

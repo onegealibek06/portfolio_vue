@@ -285,15 +285,15 @@ const scrollSlider = (direction: 'next' | 'prev') => {
       </div>
 
       <div class="p-card active" @click="openProject(9)">
-        <div class="project-badge commercial">CORPORATE_WEB</div>
+        <div class="project-badge commercial">REDESIGN 2026</div>
 
         <div class="card-bg-overlay">
-          <img src="../assets/projects/project7/main.jpg" class="card-img-preview" alt="SKT-Orken Preview">
+          <img src="../assets/projects/skt/main.jpg" class="card-img-preview" alt="SKT Orken Build Preview">
         </div>
 
         <div class="card-content">
           <div class="card-top">
-            <div class="status-indicator"><span class="pulse"></span> {{ locale.t('projects.items.9.status') }}</div>
+            <div class="status-indicator"><span class="pulse green"></span> {{ locale.t('projects.items.9.status') }}</div>
             <span class="index">09</span>
           </div>
           <div class="card-body">
@@ -928,10 +928,14 @@ const scrollSlider = (direction: 'next' | 'prev') => {
                   <button class="nav-slide next" @click="scrollSlider('next')">›</button>
 
                   <div class="gallery-track" ref="projectSlider">
-                    <div class="gallery-slide"><img src="../assets/projects/project7/main.jpg" alt="1"></div>
-                    <div class="gallery-slide"><img src="../assets/projects/project7/1.jpg" alt="2"></div>
-                    <div class="gallery-slide"><img src="../assets/projects/project7/2.jpg" alt="3"></div>
-                    <div class="gallery-slide"><img src="../assets/projects/project7/3.jpg" alt="4"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/main.jpg" alt="SKT Orken Build — Hero" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/services.jpg" alt="SKT Orken Build — Services" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/about.jpg" alt="SKT Orken Build — About" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/mobile.jpg" alt="SKT Orken Build — Mobile" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/requisites.jpg" alt="SKT Orken Build — Requisites" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/map.jpg" alt="SKT Orken Build — Office map" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/footer.jpg" alt="SKT Orken Build — Footer" loading="lazy"></div>
+                    <div class="gallery-slide"><img src="../assets/projects/skt/before.jpg" alt="SKT Orken Build — Before redesign (2025)" loading="lazy"></div>
                   </div>
                 </div>
               </div>
@@ -951,7 +955,7 @@ const scrollSlider = (direction: 'next' | 'prev') => {
                     <div class="stack-tags">
             <span v-for="(t, index) in locale.t('projects.items.9.tech')"
                   :key="t"
-                  :class="{ 'highlight-tag': index < 2 }">
+                  :class="{ 'highlight-tag': Number(index) < 2 }">
               {{ t }}
             </span>
                     </div>
@@ -968,9 +972,14 @@ const scrollSlider = (direction: 'next' | 'prev') => {
               </div>
 
               <div class="m-actions">
-                <a href="https://github.com/onegealibek06/skt-orken-site" target="_blank" class="btn-s full-width">
-                  {{ locale.t('projects.items.9.action_btn') }} <span>→</span>
-                </a>
+                <div class="action-grid">
+                  <a href="https://github.com/onegealibek06/skt-orken-site" target="_blank" class="btn-s">
+                    GITHUB REPO <span>→</span>
+                  </a>
+                  <a href="https://skt-orken-build.pages.dev/" target="_blank" class="btn-s primary">
+                    LIVE DEMO <span>↗</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -19,6 +19,7 @@ const images = [
   new URL('../assets/projects/sentinel/landing.jpg', import.meta.url).href,
   new URL('../assets/projects/smarttnails/main.jpg', import.meta.url).href,
   new URL('../assets/projects/smarttnails/works.jpg', import.meta.url).href,
+  new URL('../assets/projects/skt/main.jpg', import.meta.url).href,
 
 ];
 
