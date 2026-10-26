@@ -322,6 +322,29 @@ const messages = {
                     "focus_stat": "100%",
                     "focus_desc": "Top Lighthouse scores and strict adherence to the design system.",
                     "action_btn": "VIEW PROJECT"
+                },
+                "11": {
+                    "index": "11",
+                    "status": "LIVE",
+                    "badge_status": "REAL CLIENT",
+                    "category": "Beauty // Business website",
+                    "title": "Smarttnails",
+                    "badge": "NUXT 4 + TAILWIND 4 // LIVE",
+                    "tagline": "Website for a nail artist in Astana — real client, real bookings.",
+                    "biz_label": "ABOUT PROJECT",
+                    "description": "A website for Smarttnails, the nail studio of Ardak Aldanazarova (8 years in the industry). Built from a Dribbble reference into a soft editorial design with readable fonts, a custom logo and full RU / KZ / EN support. Clients book straight into WhatsApp with a pre-filled message, so the master knows the client came from the site.",
+                    "features": [
+                        "WhatsApp booking with an animated iPhone chat mockup and one-tap service buttons",
+                        "Live works gallery: 40 real photos in two counter-moving GSAP rows, with a grid mode",
+                        "Real 2GIS reviews (5.0 ★), price list, map and studio address",
+                        "Mobile-first, preloader, ambient music via Web Audio, SEO: sitemap, hreflang, Search Console"
+                    ],
+                    "tech_label": "TECH STACK",
+                    "tech": ["Nuxt 4", "Vue 3", "TypeScript", "Tailwind CSS 4", "GSAP", "@nuxtjs/i18n", "Web Audio API", "Cloudflare Pages"],
+                    "focus_label": "OUTCOME",
+                    "focus_stat": "LIVE",
+                    "focus_desc": "Static site generated with <b>nuxt generate</b> and published on <b>Cloudflare Pages</b> — used by the master for real bookings.",
+                    "action_btn": "VIEW PROJECT"
                 }
             }
         },
@@ -686,6 +709,29 @@ const messages = {
                     "focus_stat": "100%",
                     "focus_desc": "Максимальные показатели в Lighthouse и полное соответствие дизайн-системе.",
                     "action_btn": "ОТКРЫТЬ ПРОЕКТ"
+                },
+                "11": {
+                    "index": "11",
+                    "status": "ОПУБЛИКОВАН",
+                    "badge_status": "РЕАЛЬНЫЙ КЛИЕНТ",
+                    "category": "Бьюти // Сайт для бизнеса",
+                    "title": "Smarttnails",
+                    "badge": "NUXT 4 + TAILWIND 4 // LIVE",
+                    "tagline": "Сайт для мастера маникюра в Астане — реальный клиент, реальные записи.",
+                    "biz_label": "О ПРОЕКТЕ",
+                    "description": "Сайт студии Smarttnails мастера Ардак Алданазаровой (8 лет в профессии). От референса с Dribbble до нежного editorial-дизайна с читаемыми шрифтами, своим логотипом и полной поддержкой RU / KZ / EN. Запись идёт сразу в WhatsApp с готовым текстом, чтобы мастер видела, что клиентка пришла с сайта.",
+                    "features": [
+                        "Запись в WhatsApp: анимированный iPhone-макет с перепиской и кнопки-услуги в один тап",
+                        "Живая галерея работ: 40 настоящих фото в двух встречных лентах на GSAP, есть режим сетки",
+                        "Настоящие отзывы из 2GIS (5.0 ★), прайс, карта и адрес студии",
+                        "Mobile-first, прелоадер, фоновая музыка через Web Audio, SEO: sitemap, hreflang, Search Console"
+                    ],
+                    "tech_label": "СТЕК ТЕХНОЛОГИЙ",
+                    "tech": ["Nuxt 4", "Vue 3", "TypeScript", "Tailwind CSS 4", "GSAP", "@nuxtjs/i18n", "Web Audio API", "Cloudflare Pages"],
+                    "focus_label": "РЕЗУЛЬТАТ",
+                    "focus_stat": "LIVE",
+                    "focus_desc": "Статический сайт: <b>nuxt generate</b> и публикация на <b>Cloudflare Pages</b>. Мастер принимает через него реальные записи.",
+                    "action_btn": "СМОТРЕТЬ ПРОЕКТ"
                 }
             }
         },
@@ -1048,6 +1094,29 @@ const messages = {
                     "focus_stat": "100%",
                     "focus_desc": "Lighthouse көрсеткіштерінің жоғары деңгейі және дизайн-жүйеге толық сәйкестік.",
                     "action_btn": "ЖОБАНЫ АШУ"
+                },
+                "11": {
+                    "index": "11",
+                    "status": "ЖАРИЯЛАНДЫ",
+                    "badge_status": "НАҚТЫ КЛИЕНТ",
+                    "category": "Бьюти // Бизнеске арналған сайт",
+                    "title": "Smarttnails",
+                    "badge": "NUXT 4 + TAILWIND 4 // LIVE",
+                    "tagline": "Астанадағы маникюр шеберіне арналған сайт — нақты клиент, нақты жазылулар.",
+                    "biz_label": "ЖОБА ТУРАЛЫ",
+                    "description": "Ардақ Алданазарованың (кәсіпте 8 жыл) Smarttnails студиясының сайты. Dribbble референсінен оқылатын қаріптері, өз логотипі және RU / KZ / EN толық қолдауы бар нәзік editorial-дизайнға дейін. Жазылу бірден WhatsApp-қа дайын мәтінмен жіберіледі, сондықтан шебер клиенттің сайттан келгенін көреді.",
+                    "features": [
+                        "WhatsApp арқылы жазылу: хат алмасуы бар анимациялы iPhone-макет және бір басумен қызмет таңдау",
+                        "Жұмыстардың тірі галереясы: GSAP-тағы екі қарсы лентада 40 нақты фото, тор режимі бар",
+                        "2GIS-тегі нақты пікірлер (5.0 ★), прайс, карта және студия мекенжайы",
+                        "Mobile-first, прелоадер, Web Audio арқылы фондық музыка, SEO: sitemap, hreflang, Search Console"
+                    ],
+                    "tech_label": "ТЕХНОЛОГИЯЛАР",
+                    "tech": ["Nuxt 4", "Vue 3", "TypeScript", "Tailwind CSS 4", "GSAP", "@nuxtjs/i18n", "Web Audio API", "Cloudflare Pages"],
+                    "focus_label": "НӘТИЖЕ",
+                    "focus_stat": "LIVE",
+                    "focus_desc": "Статикалық сайт: <b>nuxt generate</b> және <b>Cloudflare Pages</b>-те жариялау. Шебер ол арқылы нақты жазылуларды қабылдайды.",
+                    "action_btn": "ЖОБАНЫ ҚАРАУ"
                 }
             }
         },
