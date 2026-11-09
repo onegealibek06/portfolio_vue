@@ -346,6 +346,29 @@ const messages = {
                     "focus_stat": "LIVE",
                     "focus_desc": "Static site generated with <b>nuxt generate</b> and published on <b>Cloudflare Pages</b> — used by the master for real bookings.",
                     "action_btn": "VIEW PROJECT"
+                },
+                "12": {
+                    "index": "12",
+                    "status": "LIVE",
+                    "badge_status": "AI SECURITY",
+                    "category": "AI Security // GenAI Gateway",
+                    "title": "Saqshy",
+                    "badge": "VUE 3 + FASTAPI // LIVE",
+                    "tagline": "A security gateway that checks every employee prompt before it reaches ChatGPT and other models.",
+                    "biz_label": "ABOUT PROJECT",
+                    "description": "Saqshy (Kazakh for “guardian”) sits between employees and LLMs: personal data is masked, jailbreaks and prompt injections are blocked, and the security team sees every incident on a dashboard. Full-stack: Vue 3 + TypeScript frontend and a FastAPI gateway.",
+                    "features": [
+                        "Detection cascade: rules (IIN/BIN checksums, cards, IBAN, API keys) → ML → transformer → LLM judge; decisions ALLOW / MASK / WARN / BLOCK",
+                        "AI chat through the gateway: SSE streaming, voice input (Whisper), PDF / Word / Excel attachments checked before sending",
+                        "Security dashboard: 3D globe of sign-ins, request journal with labeling, users, roles and invitations",
+                        "Account security: password + email code, Argon2id, rotating refresh tokens, trusted devices; KK / RU / EN, dark & light themes, mobile"
+                    ],
+                    "tech_label": "TECH STACK",
+                    "tech": ["Vue 3", "TypeScript", "FastAPI", "Pinia", "Tailwind CSS 4", "three.js / globe.gl", "SQLAlchemy + PostgreSQL", "scikit-learn + ONNX", "Groq LLM", "Docker / Render"],
+                    "focus_label": "HOW IT WORKS",
+                    "focus_stat": "4 LAYERS",
+                    "focus_desc": "Cheap rules run first — the expensive <b>LLM judge</b> is called only when earlier layers are unsure.",
+                    "action_btn": "VIEW PROJECT"
                 }
             }
         },
@@ -734,6 +757,29 @@ const messages = {
                     "focus_stat": "LIVE",
                     "focus_desc": "Статический сайт: <b>nuxt generate</b> и публикация на <b>Cloudflare Pages</b>. Мастер принимает через него реальные записи.",
                     "action_btn": "СМОТРЕТЬ ПРОЕКТ"
+                },
+                "12": {
+                    "index": "12",
+                    "status": "ОПУБЛИКОВАН",
+                    "badge_status": "AI SECURITY",
+                    "category": "ИИ-безопасность // GenAI-шлюз",
+                    "title": "Saqshy",
+                    "badge": "VUE 3 + FASTAPI // LIVE",
+                    "tagline": "Шлюз безопасности: проверяет каждый запрос сотрудника до того, как он попадёт в ChatGPT и другие модели.",
+                    "biz_label": "О ПРОЕКТЕ",
+                    "description": "Saqshy (с казахского — «страж») стоит между сотрудниками и языковыми моделями: маскирует персональные данные, блокирует jailbreak и prompt injection, а служба ИБ видит каждый инцидент на дашборде. Full-stack: фронтенд на Vue 3 + TypeScript и шлюз на FastAPI.",
+                    "features": [
+                        "Каскад детекции: правила (контрольные суммы ИИН/БИН, карты, IBAN, API-ключи) → ML → трансформер → LLM-судья; решения ALLOW / MASK / WARN / BLOCK",
+                        "ИИ-чат через шлюз: стриминг SSE, голосовой ввод (Whisper), вложения PDF / Word / Excel проверяются до отправки",
+                        "Дашборд службы ИБ: 3D-глобус входов, журнал запросов с разметкой, пользователи, роли и приглашения",
+                        "Безопасность аккаунтов: пароль + код на почту, Argon2id, ротация refresh-токенов, доверенные устройства; KK / RU / EN, тёмная и светлая темы, мобильная версия"
+                    ],
+                    "tech_label": "СТЕК ТЕХНОЛОГИЙ",
+                    "tech": ["Vue 3", "TypeScript", "FastAPI", "Pinia", "Tailwind CSS 4", "three.js / globe.gl", "SQLAlchemy + PostgreSQL", "scikit-learn + ONNX", "Groq LLM", "Docker / Render"],
+                    "focus_label": "КАК РАБОТАЕТ",
+                    "focus_stat": "4 СЛОЯ",
+                    "focus_desc": "Сначала работают дешёвые правила — дорогой <b>LLM-судья</b> вызывается, только когда предыдущие слои сомневаются.",
+                    "action_btn": "СМОТРЕТЬ ПРОЕКТ"
                 }
             }
         },
@@ -1119,6 +1165,29 @@ const messages = {
                     "focus_label": "НӘТИЖЕ",
                     "focus_stat": "LIVE",
                     "focus_desc": "Статикалық сайт: <b>nuxt generate</b> және <b>Cloudflare Pages</b>-те жариялау. Шебер ол арқылы нақты жазылуларды қабылдайды.",
+                    "action_btn": "ЖОБАНЫ ҚАРАУ"
+                },
+                "12": {
+                    "index": "12",
+                    "status": "ЖАРИЯЛАНДЫ",
+                    "badge_status": "AI SECURITY",
+                    "category": "ЖИ қауіпсіздігі // GenAI-шлюз",
+                    "title": "Saqshy",
+                    "badge": "VUE 3 + FASTAPI // LIVE",
+                    "tagline": "Қауіпсіздік шлюзі: қызметкердің әр сұрауын ChatGPT пен басқа модельдерге жеткенге дейін тексереді.",
+                    "biz_label": "ЖОБА ТУРАЛЫ",
+                    "description": "Saqshy (қазақша «сақшы») қызметкерлер мен тілдік модельдердің арасында тұрады: дербес деректерді жасырады, jailbreak пен prompt injection-ды бұғаттайды, ал АҚ қызметі әр инцидентті дашбордта көреді. Full-stack: Vue 3 + TypeScript фронтенді және FastAPI шлюзі.",
+                    "features": [
+                        "Анықтау каскады: ережелер (ЖСН/БСН бақылау сомасы, карталар, IBAN, API-кілттер) → ML → трансформер → LLM-төреші; шешімдер ALLOW / MASK / WARN / BLOCK",
+                        "Шлюз арқылы ЖИ-чат: SSE стриминг, дауыспен енгізу (Whisper), PDF / Word / Excel тіркемелері жіберілмей тұрып тексеріледі",
+                        "АҚ қызметінің дашборды: кірулердің 3D-глобусы, белгілеуі бар сұраулар журналы, пайдаланушылар, рөлдер мен шақырулар",
+                        "Аккаунт қауіпсіздігі: құпиясөз + поштаға код, Argon2id, refresh-токендердің ротациясы, сенімді құрылғылар; KK / RU / EN, қараңғы және жарық тақырыптар, мобильді нұсқа"
+                    ],
+                    "tech_label": "ТЕХНОЛОГИЯЛАР",
+                    "tech": ["Vue 3", "TypeScript", "FastAPI", "Pinia", "Tailwind CSS 4", "three.js / globe.gl", "SQLAlchemy + PostgreSQL", "scikit-learn + ONNX", "Groq LLM", "Docker / Render"],
+                    "focus_label": "ҚАЛАЙ ЖҰМЫС ІСТЕЙДІ",
+                    "focus_stat": "4 ҚАБАТ",
+                    "focus_desc": "Алдымен арзан ережелер іске қосылады — қымбат <b>LLM-төреші</b> алдыңғы қабаттар күмәнданғанда ғана шақырылады.",
                     "action_btn": "ЖОБАНЫ ҚАРАУ"
                 }
             }
